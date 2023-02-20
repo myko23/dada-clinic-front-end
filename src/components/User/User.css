@@ -1,0 +1,17 @@
+.User {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.User .User__name {
+  white-space: nowrap;
+}
+.User .User__logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=User.css.map */

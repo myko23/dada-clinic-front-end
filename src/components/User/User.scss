@@ -1,0 +1,15 @@
+@use "../../styles/" as *;
+
+.User {
+	@include displayFlex("regular", 1rem);
+	align-items: center;
+	.User__name {
+		white-space: nowrap;
+	}
+
+	.User__logo {
+		@include objSize(2.5rem, 2.5rem, 50%);
+		box-shadow: $cover-shadow;
+		object-fit: cover;
+	}
+}

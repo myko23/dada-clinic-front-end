@@ -1,0 +1,26 @@
+.SelectedPatientModal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.SelectedPatientModal .SelectedPatientModal__input .InputBox__input {
+  height: 3rem;
+}
+.SelectedPatientModal .SelectedPatientModal__patient-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+.SelectedPatientModal .SelectedPatientModal__patient-container .SelectedPatientModal__patient {
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.SelectedPatientModal .SelectedPatientModal__patient-container .SelectedPatientModal__patient:hover {
+  background-color: #709ffb;
+}
+.SelectedPatientModal .SelectedPatientModal__patient-container .SelectedPatientModal__patient--selected {
+  background-color: #709ffb;
+}/*# sourceMappingURL=SelectedPatientModal.css.map */

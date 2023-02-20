@@ -1,0 +1,47 @@
+@use "../../styles/" as *;
+
+.Admission {
+	.Admission__navigation-container {
+		margin-bottom: 1rem;
+	}
+}
+.Admission {
+	@include fitBox();
+	@include displayFlex("regular", 0, column);
+
+	background-color: $white;
+	padding: 2rem 3rem;
+
+	.Admission__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 1rem;
+
+		.Admission__header {
+			font-weight: bold;
+		}
+	}
+
+	.Admission__search-container {
+		@include displayFlex("regular", 2rem);
+		align-items: center;
+		.Admission__search input {
+			color: $black;
+			height: 2.75rem;
+		}
+	}
+
+	.Admission__table-container {
+		margin: 1rem 0;
+		overflow-y: auto;
+	}
+	.Admission__button-container {
+		margin-top: auto;
+		@include displayFlex("regular", 1rem, row);
+		.Admission__add-button {
+			width: 15rem;
+		}
+	}
+}

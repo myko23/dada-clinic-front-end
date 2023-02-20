@@ -1,0 +1,29 @@
+@use "../../styles/" as *;
+
+.MenuPictureButton {
+	@include fitBox();
+	@include displayFlex("regular", 0.5rem, column);
+	background-color: $satblue;
+	cursor: pointer;
+	box-shadow: $shadow;
+	border-radius: 0.5rem;
+	padding: 1rem;
+
+	.MenuPictureButton__text-container {
+		.MenuPictureButton__header {
+			font-weight: bold;
+		}
+		.MenuPictureButton__subheader {
+			font-weight: 300;
+		}
+	}
+
+	.MenuPictureButton__img {
+		@include fitBox();
+		border-radius: 1rem;
+	}
+
+	&:hover {
+		background-color: $lightblue;
+	}
+}

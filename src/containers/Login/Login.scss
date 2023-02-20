@@ -1,0 +1,44 @@
+@use "../../styles/" as *;
+
+.Login {
+	@include fitBox();
+	@include displayFlex("center");
+}
+
+.Login__container {
+	@include displayFlex("regular", 0, column);
+	align-items: center;
+	@include objSize(23.5rem, 18rem, 0);
+
+	.Login__header-container {
+		margin-bottom: 4rem;
+
+		.Login__logo {
+			@include objSize(6rem, 6rem, 50%);
+			background-image: url("/logo.png");
+			background-size: cover;
+			margin-bottom: 1.5rem;
+			box-shadow: $cover-shadow;
+		}
+	}
+
+	.Login__input-container {
+		@include displayFlex("regular", 1rem, column);
+		width: 100%;
+
+		.Login__input {
+			width: 100%;
+		}
+	}
+
+	.Login__button-container {
+		@include displayFlex("regular", 0.2rem, column);
+		width: 100%;
+		margin-top: 3rem;
+		.Login__error-message {
+			color: $red;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@use "../../styles/" as *;
+
+.PrimaryButton {
+	outline: none;
+	border: none;
+	font-family: "Lato", sans-serif;
+	@include objSize(2.25rem, 100%, 10px);
+	background-color: $blue;
+	font-weight: bold;
+	color: $white;
+	box-shadow: $shadow;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $lightblue;
+	}
+}
+
+.PrimaryButton--disabled {
+	cursor: default;
+	background-color: $satblue;
+	color: $black-25;
+	box-shadow: none;
+
+	&:hover {
+		background-color: $satblue;
+	}
+}

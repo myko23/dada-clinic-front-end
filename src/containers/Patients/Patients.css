@@ -1,0 +1,53 @@
+.Patients {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: #fff;
+  padding: 2rem 3rem;
+}
+.Patients .Patients__header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.Patients .Patients__header-container .Patients__header {
+  font-weight: bold;
+}
+.Patients .Patients__search-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.Patients .Patients__search-container .Patients__search input {
+  color: #343538;
+  height: 2.75rem;
+}
+.Patients .Patients__sort-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 1rem;
+  align-items: center;
+}
+.Patients .Patients__table-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.Patients .Patients__button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.Patients .Patients__button-container .Patients__button {
+  width: 20rem;
+}/*# sourceMappingURL=Patients.css.map */

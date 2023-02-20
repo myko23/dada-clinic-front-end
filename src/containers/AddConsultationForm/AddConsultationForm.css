@@ -1,0 +1,57 @@
+.AddConsultationForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.AddConsultationForm .AddConsultationForm__header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3.5rem;
+  background-color: #343538;
+}
+.AddConsultationForm .AddConsultationForm__header-container .AddConsultationForm__patient {
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.AddConsultationForm .AddConsultationForm__header-container .AddConsultationForm__close {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0;
+  cursor: pointer;
+  color: #fff;
+}
+.AddConsultationForm .AddConsultationForm__header-container .AddConsultationForm__close:hover {
+  color: #ff2121;
+}
+.AddConsultationForm .AddConsultationForm__title-container {
+  padding: 0 3.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -0.1rem;
+}
+.AddConsultationForm .AddConsultationForm__form-container {
+  height: 100%;
+  margin: 1.5rem 3.5rem;
+  overflow-y: auto;
+}
+.AddConsultationForm .AddConsultationForm__button-container {
+  padding: 1rem 4rem 2rem 3.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  margin-top: auto;
+}
+.AddConsultationForm .AddConsultationForm__button-container .AddConsultationForm__button {
+  width: 20rem;
+}
+.AddConsultationForm .AddConsultationForm__button-container .AddConsultationForm__button-reset {
+  width: 10rem;
+}/*# sourceMappingURL=AddConsultationForm.css.map */

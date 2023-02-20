@@ -1,0 +1,32 @@
+@use "../../styles/" as *;
+
+.SuccessModal {
+	@include displayFlex("regular ", 0, column);
+	@include fitBox();
+	.SuccessModal__card {
+		@include displayFlex("center");
+		background-color: $green;
+		height: 15rem;
+		.SuccessModal__icon {
+			@include objSize(5rem, 5rem);
+			color: $white;
+		}
+	}
+	.SuccessModal__text-container {
+		@include displayFlex("center", 0, column);
+
+		height: 100%;
+		.SuccessModal__header {
+			font-weight: bold;
+		}
+		.SuccessModal__message {
+			padding: 0 3rem;
+			text-align: center;
+		}
+		.SuccessModal__close {
+			margin-top: 1rem;
+			background-color: $red;
+			width: 40%;
+		}
+	}
+}

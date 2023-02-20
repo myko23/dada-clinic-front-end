@@ -1,0 +1,70 @@
+.Table {
+  padding-top: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.Table .Table__header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.Table .Table__header-container .Table__header {
+  color: #999a9b;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.Table .Table__header-container .Table__header::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.Table .Table__header-container .Table__header-options {
+  margin-left: auto;
+}
+.Table .Table__data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Table .Table__data-container .Table__data {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  height: 3.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  align-items: center;
+  padding-left: 1rem;
+  background-color: #dee9ff;
+}
+.Table .Table__data-container .Table__data:hover {
+  background: #709ffb;
+  cursor: pointer;
+}
+.Table .Table__data-container .Table__data .Table__data-item {
+  white-space: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.Table .Table__data-container .Table__data .Table__data-item::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.Table .Table__data-container .Table__data--selected {
+  background-color: #709ffb;
+}
+.Table .Table__empty-message {
+  margin-top: 7rem;
+  color: #67686a;
+  width: 100%;
+  text-align: center;
+}/*# sourceMappingURL=Table.css.map */

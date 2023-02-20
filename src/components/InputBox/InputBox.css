@@ -1,0 +1,66 @@
+.InputBox .InputBox__label {
+  white-space: nowrap;
+}
+.InputBox .InputBox__input {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-family: "Lato", sans-serif;
+  height: 2.2rem;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #1750bf;
+  color: #343538;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.InputBox .InputBox__input::-moz-placeholder {
+  color: #999a9b;
+}
+.InputBox .InputBox__input:-ms-input-placeholder {
+  color: #999a9b;
+}
+.InputBox .InputBox__input::placeholder {
+  color: #999a9b;
+}
+.InputBox .InputBox__select {
+  padding: 0 1rem;
+}
+.InputBox .InputBox__error-messsage {
+  margin: 0.3rem 0 0 0.5rem;
+  font-size: 0.8rem;
+  color: #ff2121;
+}
+.InputBox .InputBox__textarea {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-family: "Lato", sans-serif;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #1750bf;
+  color: #343538;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.InputBox .InputBox__textarea::-moz-placeholder {
+  color: #999a9b;
+}
+.InputBox .InputBox__textarea:-ms-input-placeholder {
+  color: #999a9b;
+}
+.InputBox .InputBox__textarea::placeholder {
+  color: #999a9b;
+}
+
+.InputBox--disabled .InputBox__input {
+  border: 1px solid #999a9b;
+}
+.InputBox--disabled .InputBox__label {
+  color: #999a9b;
+}/*# sourceMappingURL=InputBox.css.map */

@@ -1,0 +1,6 @@
+@use "../../../styles/" as *;
+
+.FormGroup {
+	@include displayFlex("regular", 2rem, column);
+	padding: 0.5rem;
+}

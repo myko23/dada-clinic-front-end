@@ -1,0 +1,21 @@
+@use "../../styles/" as *;
+
+.NavigationCard {
+	@include displayFlex("center", 2rem);
+	box-shadow: $shadow;
+	align-items: center;
+	@include objSize(2.5rem, 16.5rem);
+	cursor: pointer;
+
+	&:hover {
+		background-color: $satgreen;
+	}
+
+	.NavigationCard__icon {
+		@include objSize(1.5rem, 1.5rem);
+	}
+}
+
+.NavigationCard--active {
+	background-color: $green;
+}

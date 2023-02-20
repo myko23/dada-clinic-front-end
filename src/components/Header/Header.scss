@@ -1,0 +1,23 @@
+@use "../../styles/" as *;
+
+.Header {
+	@include displayFlex("regular", 1rem);
+	align-items: center;
+	.Header__label {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	.Header__text {
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	.Header__admitted {
+		padding: 0.2rem 0.5rem;
+		border-radius: 0.5rem;
+		background-color: $red;
+		font-weight: bold;
+		position: relative;
+		top: 0.65rem;
+		color: $white;
+	}
+}

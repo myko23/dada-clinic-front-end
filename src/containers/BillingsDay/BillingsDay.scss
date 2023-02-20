@@ -1,0 +1,63 @@
+@use "../../styles/" as *;
+
+.BillingsDay {
+	@include fitBox();
+	@include displayFlex("regular", 1rem, column);
+	overflow: hidden;
+
+	.BillingsDay__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		.BillingsDay__header {
+			font-weight: bold;
+		}
+	}
+	.BillingsDay__search-container {
+		@include displayFlex("regular", 2rem);
+		align-items: flex-end;
+		.BillingsDay__search input {
+			color: $black;
+			height: 2.2rem;
+		}
+		.BillingsDay__search select {
+			color: $black;
+			height: 2.2rem;
+		}
+	}
+	.BillingsDay__hmo-container {
+		@include fitBox();
+		overflow-y: auto;
+
+		.BillingsDay__hmo-set {
+			@include displayFlex("regular", 0.5rem, column);
+			overflow-y: auto;
+			padding: 1rem 0;
+			border-bottom: 3px solid $black;
+			.BillingsDay__hmo-header {
+				@include displayFlex("center");
+				width: fit-content;
+				border-radius: 1rem;
+				padding: 0.5rem 1rem;
+				font-weight: bold;
+				color: $blue;
+				.BillingsDay__hmo-title {
+					font-weight: 400;
+					margin-right: 0.5rem;
+					color: $black;
+				}
+			}
+
+			.BillingsDay__table {
+				padding-top: 0;
+				margin-bottom: 1rem;
+			}
+
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+}

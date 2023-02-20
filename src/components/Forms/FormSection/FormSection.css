@@ -1,0 +1,9 @@
+.FormSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.FormSection .FormSection__header {
+  text-decoration: underline;
+  font-weight: bold;
+}/*# sourceMappingURL=FormSection.css.map */

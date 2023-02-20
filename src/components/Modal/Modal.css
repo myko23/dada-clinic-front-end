@@ -1,0 +1,29 @@
+.Modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.Modal .Modal__content {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.Modal .Modal__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #343538;
+  opacity: 0.5;
+  cursor: pointer;
+}/*# sourceMappingURL=Modal.css.map */

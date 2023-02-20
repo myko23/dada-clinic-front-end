@@ -1,0 +1,50 @@
+.AddPatientForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-between;
+  padding: 2.25rem 3.5rem;
+}
+.AddPatientForm .AddPatientForm__header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.AddPatientForm .AddPatientForm__header-container .AddPatientForm__header {
+  font-weight: bold;
+}
+.AddPatientForm .AddPatientForm__header-container .AddPatientForm__close {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0;
+  cursor: pointer;
+}
+.AddPatientForm .AddPatientForm__header-container .AddPatientForm__close:hover {
+  color: #ff2121;
+}
+.AddPatientForm .AddPatientForm__form-container {
+  overflow-y: auto;
+  margin: 1rem 0;
+}
+.AddPatientForm .AddPatientForm__button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.AddPatientForm .AddPatientForm__button-container .AddPatientForm__button {
+  width: 20rem;
+}
+.AddPatientForm .AddPatientForm__button-container .AddPatientForm__button-reset {
+  width: 10rem;
+}
+.AddPatientForm .AddPatientForm__button-container .AddPatientForm__button-cancel {
+  margin-left: auto;
+  background-color: #ff2121;
+}
+.AddPatientForm .AddPatientForm__button-container .AddPatientForm__button-cancel:hover {
+  background-color: #fa7070;
+}/*# sourceMappingURL=AddPatientForm.css.map */

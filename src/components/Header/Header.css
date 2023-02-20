@@ -1,0 +1,23 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.Header .Header__label {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.Header .Header__text {
+  font-weight: bold;
+  white-space: nowrap;
+}
+.Header .Header__admitted {
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #ff2121;
+  font-weight: bold;
+  position: relative;
+  top: 0.65rem;
+  color: #fff;
+}/*# sourceMappingURL=Header.css.map */

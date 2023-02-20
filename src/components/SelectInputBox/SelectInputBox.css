@@ -1,0 +1,23 @@
+.SelectInputBox .SelectInputBox__select {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-family: "Lato", sans-serif;
+  height: "fit-content";
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #1750bf;
+  color: #343538;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.SelectInputBox .SelectInputBox__select::-moz-placeholder {
+  color: #999a9b;
+}
+.SelectInputBox .SelectInputBox__select:-ms-input-placeholder {
+  color: #999a9b;
+}
+.SelectInputBox .SelectInputBox__select::placeholder {
+  color: #999a9b;
+}/*# sourceMappingURL=SelectInputBox.css.map */

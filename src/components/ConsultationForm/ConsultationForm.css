@@ -1,0 +1,10 @@
+.ConsultationForm {
+  width: 100%;
+  height: 100%;
+}
+.ConsultationForm .ConsultationForm__input .InputBox__input {
+  height: 2.75rem;
+}
+.ConsultationForm .ConsultationForm__input--edited .InputBox__input {
+  border: 3px solid #1ef726;
+}/*# sourceMappingURL=ConsultationForm.css.map */

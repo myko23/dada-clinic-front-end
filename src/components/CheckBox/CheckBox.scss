@@ -1,0 +1,23 @@
+@use "../../styles/" as *;
+
+.CheckBox {
+	@include displayFlex("regular", 1rem);
+	align-items: center;
+	cursor: pointer;
+	.CheckBox__checkbox {
+		@include objSize(2rem, 2rem, 0.5rem);
+		@include displayFlex("center");
+		padding: 0.25rem;
+		border: 1px solid $black;
+		overflow: hidden;
+
+		.CheckBox__mark {
+			background-color: $blue;
+			@include fitBox();
+			border-radius: 0.25rem;
+		}
+		.CheckBox__label {
+			white-space: nowrap;
+		}
+	}
+}

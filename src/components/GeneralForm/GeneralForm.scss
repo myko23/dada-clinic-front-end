@@ -1,0 +1,13 @@
+@use "../../styles/" as *;
+
+.GeneralForm {
+	@include fitBox();
+
+	.GeneralForm__input .InputBox__input {
+		height: 2.75rem;
+	}
+
+	.GeneralForm__input--edited .InputBox__input {
+		border: 3px solid $green;
+	}
+}

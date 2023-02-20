@@ -1,0 +1,48 @@
+.Consultation .Consultation__navigation-container {
+  margin-bottom: 1rem;
+}
+
+.Consultation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: #fff;
+  padding: 2rem 3rem;
+}
+.Consultation .Consultation__header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.Consultation .Consultation__header-container .Consultation__header {
+  font-weight: bold;
+}
+.Consultation .Consultation__search-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.Consultation .Consultation__search-container .Consultation__search input {
+  color: #343538;
+  height: 2.75rem;
+}
+.Consultation .Consultation__table-container {
+  margin: 1rem 0;
+  overflow-y: auto;
+}
+.Consultation .Consultation__button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: auto;
+}
+.Consultation .Consultation__button-container .Consultation__add-button {
+  width: 20rem;
+}/*# sourceMappingURL=Consultation.css.map */

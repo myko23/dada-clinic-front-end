@@ -1,0 +1,76 @@
+@use "../../styles/" as *;
+
+.Navigation {
+	@include displayFlex("regular", 0, column);
+	align-items: center;
+	justify-content: space-between;
+	@include objSize(100%, 6.5rem);
+	background-color: $black-90;
+	color: $white;
+
+	.Navigation__logo-container {
+		@include displayFlex("center");
+		width: 100%;
+		padding: 1.5rem;
+		.Navigation__logo {
+			@include objSize(3.5rem, 3.5rem, 8px);
+			cursor: pointer;
+		}
+	}
+
+	.Navigation__menu-container {
+		@include fitBox();
+		border-top: 1px solid $white;
+		border-bottom: 1px solid $white;
+
+		@include displayFlex("regular", 1.5rem, column);
+		align-items: center;
+		padding: 1.5rem;
+
+		.Navigation__navitem {
+			@include displayFlex("regular", 0, column);
+			align-items: center;
+			cursor: pointer;
+
+			.Navigation__navitem-icon {
+				@include objSize(2.5rem, 2.5rem);
+				color: $white;
+			}
+
+			&:hover {
+				color: $lightblue;
+				.Navigation__navitem-icon {
+					color: $lightblue;
+				}
+			}
+		}
+
+		.Navigation__navitem--selected {
+			color: $lightblue;
+			.Navigation__navitem-icon {
+				color: $lightblue;
+			}
+		}
+
+		.Navigation__menu-item {
+			@include objSize(2rem, 2rem, 8px);
+			cursor: pointer;
+			&:hover {
+				color: $black-25;
+			}
+		}
+	}
+
+	.Navigatin__logout-container {
+		@include displayFlex("center");
+		width: 100%;
+		padding: 1.5rem;
+		.Navigation__logout {
+			@include objSize(2rem, 2rem, 8px);
+			cursor: pointer;
+			&:hover {
+				color: $black-25;
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.NavigationCard {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  align-items: center;
+  height: 2.5rem;
+  width: 16.5rem;
+  border-radius: 0;
+  cursor: pointer;
+}
+.NavigationCard:hover {
+  background-color: #b2ffb6;
+}
+.NavigationCard .NavigationCard__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0;
+}
+
+.NavigationCard--active {
+  background-color: #1ef726;
+}/*# sourceMappingURL=NavigationCard.css.map */

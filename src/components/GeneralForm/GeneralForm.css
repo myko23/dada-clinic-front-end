@@ -1,0 +1,10 @@
+.GeneralForm {
+  width: 100%;
+  height: 100%;
+}
+.GeneralForm .GeneralForm__input .InputBox__input {
+  height: 2.75rem;
+}
+.GeneralForm .GeneralForm__input--edited .InputBox__input {
+  border: 3px solid #1ef726;
+}/*# sourceMappingURL=GeneralForm.css.map */

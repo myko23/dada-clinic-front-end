@@ -1,0 +1,24 @@
+@use "../../styles/" as *;
+
+.UserSettings {
+	@include fitBox();
+	@include displayFlex("regular", 1rem, column);
+	padding: 2rem 3rem;
+
+	.UserSettings__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		.UserSettings__header {
+			font-weight: bold;
+		}
+	}
+
+	.UserSettings__form-container {
+		.InputBox__input {
+			height: 2.75rem;
+		}
+	}
+}

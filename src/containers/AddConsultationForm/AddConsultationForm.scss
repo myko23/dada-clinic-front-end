@@ -1,0 +1,53 @@
+@use "../../styles" as *;
+
+.AddConsultationForm {
+	@include fitBox();
+	@include displayFlex("regular", 0, column);
+	.AddConsultationForm__header-container {
+		@include displayFlex("regular");
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem 3.5rem;
+		background-color: $black;
+
+		.AddConsultationForm__patient {
+			font-weight: bold;
+			color: $white;
+			cursor: pointer;
+		}
+		.AddConsultationForm__close {
+			@include objSize(2rem, 2rem);
+			cursor: pointer;
+			color: $white;
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+
+	.AddConsultationForm__title-container {
+		padding: 0 3.5rem;
+		font-weight: bold;
+		margin-top: 1rem;
+		text-transform: uppercase;
+		letter-spacing: -0.1rem;
+	}
+
+	.AddConsultationForm__form-container {
+		height: 100%;
+		margin: 1.5rem 3.5rem;
+		overflow-y: auto;
+	}
+	.AddConsultationForm__button-container {
+		padding: 1rem 4rem 2rem 3.5rem;
+		@include displayFlex("regular", 2rem);
+		align-items: center;
+		margin-top: auto;
+		.AddConsultationForm__button {
+			width: 20rem;
+		}
+		.AddConsultationForm__button-reset {
+			width: 10rem;
+		}
+	}
+}

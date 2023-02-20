@@ -1,0 +1,23 @@
+@use "../../styles/" as *;
+
+.TableOptions {
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	position: absolute;
+	right: 1rem;
+	background-color: $white;
+	box-shadow: $shadow;
+	z-index: 1;
+	.TableOptions__options {
+		padding: 0.1rem 0.1rem;
+		.TableOptions__select-box {
+			padding: 0.2rem 0.5em;
+			border-radius: 0.3rem;
+			text-transform: capitalize;
+			white-space: nowrap;
+			&:hover {
+				background-color: $black-10;
+			}
+		}
+	}
+}

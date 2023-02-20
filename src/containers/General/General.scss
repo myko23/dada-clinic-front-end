@@ -1,0 +1,35 @@
+@use "../../styles/" as *;
+
+.General {
+	@include fitBox();
+	@include displayFlex("regular", 0, column);
+
+	background-color: $white;
+	padding: 2rem 3rem;
+
+	.General__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.General__form-container {
+		@include fitBox();
+		margin: 1rem 0;
+
+		overflow-y: auto;
+	}
+
+	.General__button-container {
+		@include displayFlex("regular", 2rem);
+		align-items: center;
+		margin-top: auto;
+		.General__button {
+			width: 20rem;
+		}
+		.General__button-reset {
+			width: 10rem;
+		}
+	}
+}

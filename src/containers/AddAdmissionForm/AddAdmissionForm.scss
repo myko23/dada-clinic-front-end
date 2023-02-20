@@ -1,0 +1,51 @@
+@use "../../styles" as *;
+
+.AddAdmissionForm {
+	@include fitBox();
+	@include displayFlex("regular", 0, column);
+	.AddAdmissionForm__header-container {
+		@include displayFlex("regular");
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem 3.5rem;
+		background-color: $black;
+
+		.AddAdmissionForm__patient {
+			font-weight: bold;
+			color: $white;
+			cursor: pointer;
+		}
+		.AddAdmissionForm__close {
+			@include objSize(2rem, 2rem);
+			cursor: pointer;
+			color: $white;
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+
+	.AddAdmissionForm__title-container {
+		padding: 0 3.5rem;
+		font-weight: bold;
+		margin-top: 1rem;
+		text-transform: uppercase;
+		letter-spacing: -0.1rem;
+	}
+
+	.AddAdmissionForm__form-container {
+		height: 100%;
+		margin: 1.5rem 3.5rem;
+		overflow-y: auto;
+	}
+	.AddAdmissionForm__button-container {
+		padding: 1rem 4rem 2rem 3.5rem;
+		@include displayFlex("regular", 1rem);
+		.AddAdmissionForm__button {
+			width: 20rem;
+		}
+		.AddAdmissionForm__button-reset {
+			width: 10rem;
+		}
+	}
+}

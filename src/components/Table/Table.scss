@@ -1,0 +1,57 @@
+@use "../../styles/" as *;
+
+.Table {
+	padding-top: 1rem;
+	user-select: none;
+
+	.Table__header-container {
+		@include displayFlex("regular");
+		position: sticky;
+		top: 0;
+		background-color: $white;
+		width: 100%;
+		padding-left: 1rem;
+		margin-bottom: 0.5rem;
+
+		.Table__header {
+			color: $black-50;
+			@include hiddenScroll();
+			white-space: nowrap;
+			overflow-x: auto;
+		}
+		.Table__header-options {
+			margin-left: auto;
+		}
+	}
+	.Table__data-container {
+		@include displayFlex("regular", 0.5rem, column);
+
+		.Table__data {
+			@include displayFlex();
+			@include objSize(3.5rem, 100%, 0.5rem);
+			align-items: center;
+			padding-left: 1rem;
+			background-color: $satblue;
+
+			&:hover {
+				background: $lightblue;
+				cursor: pointer;
+			}
+
+			.Table__data-item {
+				white-space: nowrap;
+				overflow-x: auto;
+				@include hiddenScroll();
+			}
+		}
+		.Table__data--selected {
+			background-color: $lightblue;
+		}
+	}
+	.Table__empty-message {
+		margin-top: 7rem;
+		color: $black-75;
+		width: 100%;
+		text-align: center;
+	}
+}

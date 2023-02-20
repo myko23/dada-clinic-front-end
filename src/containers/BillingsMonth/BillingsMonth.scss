@@ -1,0 +1,45 @@
+@use "../../styles/" as *;
+
+.BillingsMonth {
+	@include fitBox();
+	@include displayFlex("regular", 1rem, column);
+	overflow: hidden;
+	.BillingsMonth__search-container {
+		@include displayFlex("regular", 1.5rem, row);
+		align-items: center;
+	}
+
+	.BillingsMonth__hmo-container {
+		@include fitBox();
+		overflow-y: auto;
+
+		.BillingsMonth__hmo-set {
+			@include displayFlex("regular", 0.5rem, column);
+			overflow-y: auto;
+			padding: 1rem 0;
+			border-bottom: 3px solid $black;
+			.BillingsMonth__hmo-header {
+				@include displayFlex("center");
+				width: fit-content;
+				border-radius: 1rem;
+				padding: 0.5rem 1rem;
+				font-weight: bold;
+				color: $blue;
+				.BillingsMonth__hmo-title {
+					font-weight: 400;
+					margin-right: 0.5rem;
+					color: $black;
+				}
+			}
+
+			.BillingsMonth__table {
+				padding-top: 0;
+				margin-bottom: 1rem;
+			}
+
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+}

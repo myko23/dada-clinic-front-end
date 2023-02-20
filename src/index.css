@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+	line-height: 24px;
+	font-weight: 400;
+	font-family: "Lato", sans-serif;
+
+	color-scheme: light dark;
+	color: #454545;
+	background-color: white;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #1e68f7 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #494a4d;
+	border-radius: 10px;
+	border: 3px solid #ffffff;
+}
+
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
+a:hover {
+	color: #535bf2;
+}
+body {
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1.bold,
+h2.bold,
+h3.bold,
+h4.bold,
+h5.bold,
+h6.bold {
+	font-weight: 700;
+}
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+	font-weight: 300;
+}
+
+h1,
+.h1 {
+	font-size: 91px;
+	line-height: 109px;
+}
+h2,
+.h2 {
+	font-size: 64px;
+	line-height: 77px;
+}
+h3,
+.h3 {
+	font-size: 45px;
+	line-height: 54px;
+}
+h4,
+.h4 {
+	font-size: 32px;
+	line-height: 38px;
+}
+h5,
+.h5 {
+	font-size: 23px;
+	line-height: 28px;
+}
+h6,
+.h6 {
+	font-size: 16px;
+	line-height: 19px;
+}

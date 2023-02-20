@@ -1,0 +1,22 @@
+@use "../../styles/" as *;
+
+.SelectInputBox {
+	.SelectInputBox__select {
+		@include displayFlex("regular", 0.5rem);
+		font-family: "Lato", sans-serif;
+
+		@include objSize("fit-content", 100%, 5px);
+		outline: none;
+
+		padding: 0.2rem 0.5rem;
+
+		border: 1px solid $darkblue;
+		color: $black;
+
+		box-shadow: $shadow;
+
+		&::placeholder {
+			color: $black-50;
+		}
+	}
+}

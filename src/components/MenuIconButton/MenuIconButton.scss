@@ -1,0 +1,47 @@
+@use "../../styles/" as *;
+
+.MenuIconButton {
+	@include fitBox();
+	@include displayFlex("regular", 2.3rem);
+	align-items: center;
+	box-shadow: $shadow;
+	background-color: $satblue;
+	border-radius: 0.5rem;
+	padding: 1.5rem 1rem;
+	cursor: pointer;
+
+	.MenuIconButton__icon {
+		@include objSize(2.5rem, 2.5rem);
+	}
+
+	.MenuIconButton__text-container {
+		.MenuIconButton__header {
+			font-weight: bold;
+			white-space: nowrap;
+		}
+		.MenuIconButton__subheader {
+			font-weight: 300;
+			white-space: nowrap;
+		}
+	}
+
+	&:hover {
+		background-color: $lightblue;
+	}
+}
+
+.MenuIconButton--small {
+	height: 2.5rem;
+	padding: 0 1rem;
+	.MenuIconButton__icon {
+		@include objSize(1.8rem, 1.8rem);
+	}
+	.MenuIconButton__text-container {
+		@include displayFlex("regular", 1rem);
+		align-items: center;
+		.MenuIconButton__header {
+			font-size: 23px;
+			line-height: 28px;
+		}
+	}
+}

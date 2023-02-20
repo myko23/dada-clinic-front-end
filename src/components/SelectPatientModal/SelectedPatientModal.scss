@@ -1,0 +1,29 @@
+@use "../../styles/" as *;
+
+.SelectedPatientModal {
+	@include displayFlex("regular", 1rem, column);
+	padding: 1rem;
+
+	.SelectedPatientModal__input .InputBox__input {
+		height: 3rem;
+	}
+
+	.SelectedPatientModal__patient-container {
+		@include displayFlex("regular", 0.5rem, column);
+
+		overflow-y: auto;
+
+		.SelectedPatientModal__patient {
+			padding: 0.3rem 1rem;
+			border-radius: 0.5rem;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $lightblue;
+			}
+		}
+		.SelectedPatientModal__patient--selected {
+			background-color: $lightblue;
+		}
+	}
+}

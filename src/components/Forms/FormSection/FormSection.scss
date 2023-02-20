@@ -1,0 +1,9 @@
+@use "../../../styles/" as *;
+
+.FormSection {
+	@include displayFlex("regular", 1rem, column);
+	.FormSection__header {
+		text-decoration: underline;
+		font-weight: bold;
+	}
+}

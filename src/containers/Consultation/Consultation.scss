@@ -1,0 +1,47 @@
+@use "../../styles/" as *;
+
+.Consultation {
+	.Consultation__navigation-container {
+		margin-bottom: 1rem;
+	}
+}
+.Consultation {
+	@include fitBox();
+	@include displayFlex("regular", 0, column);
+
+	background-color: $white;
+	padding: 2rem 3rem;
+
+	.Consultation__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 1rem;
+
+		.Consultation__header {
+			font-weight: bold;
+		}
+	}
+
+	.Consultation__search-container {
+		@include displayFlex("regular", 2rem);
+		align-items: center;
+		.Consultation__search input {
+			color: $black;
+			height: 2.75rem;
+		}
+	}
+	.Consultation__table-container {
+		margin: 1rem 0;
+		overflow-y: auto;
+	}
+
+	.Consultation__button-container {
+		@include displayFlex("regular", 1rem);
+		margin-top: auto;
+		.Consultation__add-button {
+			width: 20rem;
+		}
+	}
+}

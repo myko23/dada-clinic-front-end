@@ -1,0 +1,29 @@
+.CheckBox {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+.CheckBox .CheckBox__checkbox {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border: 1px solid #343538;
+  overflow: hidden;
+}
+.CheckBox .CheckBox__checkbox .CheckBox__mark {
+  background-color: #1e68f7;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+.CheckBox .CheckBox__checkbox .CheckBox__label {
+  white-space: nowrap;
+}/*# sourceMappingURL=CheckBox.css.map */

@@ -1,0 +1,26 @@
+@use "../../styles/" as *;
+
+.Modal {
+	@include fitBox("screen");
+	@include displayFlex("center");
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	.Modal__content {
+		border-radius: 1rem;
+		overflow: hidden;
+		background-color: $white;
+		z-index: 1;
+		box-shadow: $shadow;
+	}
+	.Modal__overlay {
+		@include fitBox();
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $black;
+		opacity: 0.5;
+		cursor: pointer;
+	}
+}

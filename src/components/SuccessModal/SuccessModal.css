@@ -1,0 +1,42 @@
+.SuccessModal {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+}
+.SuccessModal .SuccessModal__card {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #1ef726;
+  height: 15rem;
+}
+.SuccessModal .SuccessModal__card .SuccessModal__icon {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0;
+  color: #fff;
+}
+.SuccessModal .SuccessModal__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.SuccessModal .SuccessModal__text-container .SuccessModal__header {
+  font-weight: bold;
+}
+.SuccessModal .SuccessModal__text-container .SuccessModal__message {
+  padding: 0 3rem;
+  text-align: center;
+}
+.SuccessModal .SuccessModal__text-container .SuccessModal__close {
+  margin-top: 1rem;
+  background-color: #ff2121;
+  width: 40%;
+}/*# sourceMappingURL=SuccessModal.css.map */

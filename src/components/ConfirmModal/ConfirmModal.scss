@@ -1,0 +1,36 @@
+@use "../../styles/" as *;
+
+.ConfirmModal {
+	@include fitBox();
+	@include displayFlex("regular", 0, column);
+	.ConfirmModal__header-container {
+		@include objSize(60%, 100%);
+		@include displayFlex("center", 0);
+		padding: 1rem 2rem;
+		border-bottom: 1px solid $black;
+		.ConfirmModal__header-text {
+			padding: 0 1.5rem;
+		}
+		.ConfirmModal__header {
+			font-weight: bold;
+			white-space: nowrap;
+		}
+
+		.ConfirmModal__icon {
+			@include objSize(3rem, 3rem);
+			color: $blue;
+		}
+	}
+
+	.ConfirmModal__button-container {
+		height: 40%;
+		@include displayFlex("center", 4rem);
+		padding: 1rem 2rem;
+		.ConfirmModal__cancel {
+			background-color: $red;
+			&:hover {
+				background-color: $lightred;
+			}
+		}
+	}
+}

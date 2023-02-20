@@ -1,0 +1,46 @@
+.ConsultationList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 3rem;
+}
+.ConsultationList .ConsultationList__header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.ConsultationList .ConsultationList__header-container .ConsultationList__header {
+  font-weight: bold;
+}
+.ConsultationList .ConsultationList__search-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-end;
+}
+.ConsultationList .ConsultationList__search-container .ConsultationList__search input {
+  color: #343538;
+  height: 2.2rem;
+}
+.ConsultationList .ConsultationList__search-container .ConsultationList__search select {
+  color: #343538;
+  height: 2.2rem;
+}
+.ConsultationList .ConsultationList__table-container {
+  margin: 1rem 0;
+  overflow-y: auto;
+}
+.ConsultationList .ConsultationList__button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: auto;
+}
+.ConsultationList .ConsultationList__button-container .ConsultationList__button {
+  width: 20rem;
+}/*# sourceMappingURL=ConsultationList.css.map */

@@ -1,0 +1,14 @@
+@use "../../../styles/" as *;
+
+.ChangeSelectedPatient {
+	@include displayFlex("center", 1rem, column);
+	@include objSize(10rem, 10rem, 10px);
+	background-color: $white;
+	border: 3px solid $blue;
+	position: fixed;
+	top: 5rem;
+	left: 5rem;
+	padding: 1rem;
+	box-shadow: $shadow;
+	z-index: 1;
+}

@@ -1,0 +1,48 @@
+@use "../../styles/" as *;
+
+.Patients {
+	@include fitBox();
+	@include displayFlex("regular", 0, column);
+
+	background-color: $white;
+	padding: 2rem 3rem;
+
+	.Patients__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 1rem;
+
+		.Patients__header {
+			font-weight: bold;
+		}
+	}
+	.Patients__search-container {
+		@include displayFlex("regular", 2rem);
+		align-items: center;
+		.Patients__search input {
+			color: $black;
+			height: 2.75rem;
+		}
+	}
+
+	.Patients__sort-container {
+		@include displayFlex("regular", 1rem);
+		padding-top: 1rem;
+		align-items: center;
+	}
+	.Patients__table-container {
+		@include fitBox();
+		border-radius: 0.5rem;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	.Patients__button-container {
+		@include displayFlex("regular", 1rem);
+		.Patients__button {
+			width: 20rem;
+		}
+	}
+}

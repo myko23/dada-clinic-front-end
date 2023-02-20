@@ -1,0 +1,57 @@
+.Home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 3rem;
+}
+.Home .Home__header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.Home .Home__header-container .Home__header {
+  font-weight: bold;
+}
+.Home .Home__items-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.Home .Home__items-container .Home__item-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.Home .Home__items-container .Home__item-row .Home__item {
+  height: 4rem;
+  width: 100%;
+  border-radius: 0;
+}
+.Home .Home__items-container .Home__item-row--small {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.Home .Home__items-container .Home__item-row--small .Home__item {
+  width: 100%;
+  height: 100%;
+}
+.Home .Home__items-container .Home__item-list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+.Home .Home__items-container .Home__item-list-container .Home__item-list {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=Home.css.map */

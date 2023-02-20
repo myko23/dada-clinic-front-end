@@ -1,0 +1,22 @@
+@use "../../styles/" as *;
+
+.Billings {
+	@include fitBox();
+	@include displayFlex("regular", 1rem, column);
+	padding: 2rem 3rem;
+
+	.Billings__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		.Billings__header {
+			font-weight: bold;
+		}
+	}
+
+	.Billings__navigation-container {
+		@include displayFlex("regular", 1rem);
+	}
+}

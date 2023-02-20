@@ -1,0 +1,41 @@
+.DateTest {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: "fit-content";
+  width: 20rem;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 3px solid #1e68f7;
+  position: fixed;
+  top: 5rem;
+  left: 5rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 1;
+}
+.DateTest .DateTest__datepicker {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-family: "Lato", sans-serif;
+  height: 2.2rem;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #1750bf;
+  color: #343538;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.DateTest .DateTest__datepicker::-moz-placeholder {
+  color: #999a9b;
+}
+.DateTest .DateTest__datepicker:-ms-input-placeholder {
+  color: #999a9b;
+}
+.DateTest .DateTest__datepicker::placeholder {
+  color: #999a9b;
+}/*# sourceMappingURL=DateTest.css.map */

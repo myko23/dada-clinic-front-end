@@ -1,0 +1,47 @@
+@use "../../styles/" as *;
+
+.AddPatientForm {
+	@include fitBox();
+	@include displayFlex("regular", 0, column);
+	justify-content: space-between;
+	padding: 2.25rem 3.5rem;
+
+	.AddPatientForm__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+
+		.AddPatientForm__header {
+			font-weight: bold;
+		}
+		.AddPatientForm__close {
+			@include objSize(2rem, 2rem);
+			cursor: pointer;
+
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+	.AddPatientForm__form-container {
+		overflow-y: auto;
+		margin: 1rem 0;
+	}
+	.AddPatientForm__button-container {
+		@include displayFlex("regular", 1rem);
+
+		.AddPatientForm__button {
+			width: 20rem;
+		}
+		.AddPatientForm__button-reset {
+			width: 10rem;
+		}
+		.AddPatientForm__button-cancel {
+			margin-left: auto;
+			background-color: $red;
+			&:hover {
+				background-color: $lightred;
+			}
+		}
+	}
+}

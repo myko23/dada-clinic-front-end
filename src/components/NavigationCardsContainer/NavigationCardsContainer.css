@@ -1,0 +1,6 @@
+.NavigationCardsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}/*# sourceMappingURL=NavigationCardsContainer.css.map */

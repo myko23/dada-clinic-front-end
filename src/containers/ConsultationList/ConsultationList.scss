@@ -1,0 +1,42 @@
+@use "../../styles/" as *;
+
+.ConsultationList {
+	@include fitBox();
+	@include displayFlex("regular", 1rem, column);
+	padding: 2rem 3rem;
+
+	.ConsultationList__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		.ConsultationList__header {
+			font-weight: bold;
+		}
+	}
+	.ConsultationList__search-container {
+		@include displayFlex("regular", 2rem);
+		align-items: flex-end;
+		.ConsultationList__search input {
+			color: $black;
+			height: 2.2rem;
+		}
+		.ConsultationList__search select {
+			color: $black;
+			height: 2.2rem;
+		}
+	}
+	.ConsultationList__table-container {
+		margin: 1rem 0;
+		overflow-y: auto;
+	}
+
+	.ConsultationList__button-container {
+		@include displayFlex("regular", 1rem);
+		margin-top: auto;
+		.ConsultationList__button {
+			width: 20rem;
+		}
+	}
+}

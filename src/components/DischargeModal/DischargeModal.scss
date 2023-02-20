@@ -1,0 +1,31 @@
+@use "../../styles/" as *;
+
+.DischargeModal {
+	@include fitBox();
+	@include displayFlex("regular", 0, column);
+	padding: 2rem;
+	.DischargeModal__header-container {
+		@include displayFlex("regular");
+		align-items: center;
+		justify-content: space-between;
+		.DischargeModal__close {
+			@include objSize(1.5rem, 1.5rem);
+			cursor: pointer;
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+	.DischargeModal__form-container {
+		@include displayFlex("regular", 1rem, column);
+		overflow: auto;
+		padding: 0.5rem;
+	}
+	.DischargeModal__button-container {
+		margin-top: auto;
+		@include displayFlex();
+		.DischargeModal__button {
+			width: 80%;
+		}
+	}
+}

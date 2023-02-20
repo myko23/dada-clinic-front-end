@@ -1,0 +1,13 @@
+@use "../../styles/" as *;
+
+.ConsultationForm {
+	@include fitBox();
+
+	.ConsultationForm__input .InputBox__input {
+		height: 2.75rem;
+	}
+
+	.ConsultationForm__input--edited .InputBox__input {
+		border: 3px solid $green;
+	}
+}

@@ -1,0 +1,47 @@
+.ConfirmModal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.ConfirmModal .ConfirmModal__header-container {
+  height: 60%;
+  width: 100%;
+  border-radius: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #343538;
+}
+.ConfirmModal .ConfirmModal__header-container .ConfirmModal__header-text {
+  padding: 0 1.5rem;
+}
+.ConfirmModal .ConfirmModal__header-container .ConfirmModal__header {
+  font-weight: bold;
+  white-space: nowrap;
+}
+.ConfirmModal .ConfirmModal__header-container .ConfirmModal__icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0;
+  color: #1e68f7;
+}
+.ConfirmModal .ConfirmModal__button-container {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+.ConfirmModal .ConfirmModal__button-container .ConfirmModal__cancel {
+  background-color: #ff2121;
+}
+.ConfirmModal .ConfirmModal__button-container .ConfirmModal__cancel:hover {
+  background-color: #fa7070;
+}/*# sourceMappingURL=ConfirmModal.css.map */

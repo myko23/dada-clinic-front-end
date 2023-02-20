@@ -1,0 +1,47 @@
+@use "../../styles/" as *;
+
+.Home {
+	@include fitBox();
+	@include displayFlex("regular", 0.5rem, column);
+	padding: 2rem 3rem;
+
+	.Home__header-container {
+		@include displayFlex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 1rem;
+
+		.Home__header {
+			font-weight: bold;
+		}
+	}
+
+	.Home__items-container {
+		@include fitBox();
+		@include displayFlex("regular", 1.5rem, column);
+		.Home__item-row {
+			@include displayFlex("regular", 1.5rem);
+
+			.Home__item {
+				@include objSize(4rem, 100%, 0);
+			}
+		}
+
+		.Home__item-row--small {
+			@include displayFlex("regular", 1.5rem);
+			.Home__item {
+				@include fitBox();
+			}
+		}
+
+		.Home__item-list-container {
+			@include displayFlex("regular", 1.5rem);
+			@include fitBox();
+
+			.Home__item-list {
+				@include fitBox();
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+@use "../../styles/" as *;
+
+.Total {
+	@include displayFlex("regular", 1rem);
+	align-items: center;
+}

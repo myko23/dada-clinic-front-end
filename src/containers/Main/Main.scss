@@ -1,0 +1,13 @@
+@use "../../styles/" as *;
+
+.Main {
+	@include fitBox();
+	@include displayFlex();
+	background-color: $white;
+	overflow: hidden;
+
+	.Main__display-container {
+		@include fitBox();
+		@include displayFlex();
+	}
+}

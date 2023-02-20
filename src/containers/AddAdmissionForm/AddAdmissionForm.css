@@ -1,0 +1,55 @@
+.AddAdmissionForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.AddAdmissionForm .AddAdmissionForm__header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3.5rem;
+  background-color: #343538;
+}
+.AddAdmissionForm .AddAdmissionForm__header-container .AddAdmissionForm__patient {
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.AddAdmissionForm .AddAdmissionForm__header-container .AddAdmissionForm__close {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0;
+  cursor: pointer;
+  color: #fff;
+}
+.AddAdmissionForm .AddAdmissionForm__header-container .AddAdmissionForm__close:hover {
+  color: #ff2121;
+}
+.AddAdmissionForm .AddAdmissionForm__title-container {
+  padding: 0 3.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -0.1rem;
+}
+.AddAdmissionForm .AddAdmissionForm__form-container {
+  height: 100%;
+  margin: 1.5rem 3.5rem;
+  overflow-y: auto;
+}
+.AddAdmissionForm .AddAdmissionForm__button-container {
+  padding: 1rem 4rem 2rem 3.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.AddAdmissionForm .AddAdmissionForm__button-container .AddAdmissionForm__button {
+  width: 20rem;
+}
+.AddAdmissionForm .AddAdmissionForm__button-container .AddAdmissionForm__button-reset {
+  width: 10rem;
+}/*# sourceMappingURL=AddAdmissionForm.css.map */

@@ -1,0 +1,26 @@
+.PrimaryButton {
+  outline: none;
+  border: none;
+  font-family: "Lato", sans-serif;
+  height: 2.25rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #1e68f7;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+}
+.PrimaryButton:hover {
+  background-color: #709ffb;
+}
+
+.PrimaryButton--disabled {
+  cursor: default;
+  background-color: #dee9ff;
+  color: #cccccd;
+  box-shadow: none;
+}
+.PrimaryButton--disabled:hover {
+  background-color: #dee9ff;
+}/*# sourceMappingURL=PrimaryButton.css.map */

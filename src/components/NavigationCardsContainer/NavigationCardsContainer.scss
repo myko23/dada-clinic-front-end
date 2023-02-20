@@ -1,0 +1,6 @@
+@use "../../styles/" as *;
+
+.NavigationCardsContainer {
+	@include displayFlex("regular", 2rem);
+	align-items: center;
+}
